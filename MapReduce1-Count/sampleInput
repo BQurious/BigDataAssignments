@@ -1,0 +1,6 @@
+Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data
+A MapReduce job usually splits the input data-set into independent chunks which are processed by the map tasks in a completely parallel manner
+Typically the compute nodes and the storage nodes are the same
+Applications can specify a comma separated list of paths which would be present in the current working directory of the task using the option files
+Applications can specify environment variables
+Maps are the individual tasks that transform input records into intermediate records
