@@ -7,3 +7,13 @@ query all cols of movieratings
 Select movies before a year (Here: 2000)
 order them alphabetically
 select before 2000 and name not start with 'A'
+
+list all ratings from one user (here:41)
+select only movieid,rating colums for user 41
+use join to display data from both tables
+
+average rating given by user 41
+list users who rated, number of ratings per user, average rating given
+copy this data into new table: userrating
+
+show results
