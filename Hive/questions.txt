@@ -1,0 +1,9 @@
+list of tables
+show all metadata
+query all colums of movie
+query 15 rows, all cols of movie
+query all cols of movieratings
+
+Select movies before a year (Here: 2000)
+order them alphabetically
+select before 2000 and name not start with 'A'
