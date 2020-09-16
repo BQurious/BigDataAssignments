@@ -1,0 +1,40 @@
+create 'exams', 'student','subject','venue'
+
+put 'exams','row1','student:name','John Doe'
+put 'exams','row1','student:batch','2012'
+put 'exams','row1','student:stream','CSE'
+put 'exams','row1','student:rollNum','012345'
+put 'exams','row1','subject:subName','CPP Lab'
+put 'exams','row1','subject:score','85'
+put 'exams','row1','subject:timeTaken','2.5'
+put 'exams','row1','venue:hall','CHPC'
+put 'exams','row1','venue:seatNum','4'
+put 'exams','row1','venue:date','23/03/2013'
+put 'exams','row1','venue:startTime','10:00AM'
+
+put 'exams','row2','student:name','Samwise Gamgee'
+put 'exams','row2','student:batch','2000'
+put 'exams','row2','student:stream','LTR'
+put 'exams','row2','student:rollNum','012333'
+put 'exams','row2','subject:subName','Herbalism'
+put 'exams','row2','subject:score','87'
+put 'exams','row2','subject:timeTaken','2'
+put 'exams','row2','venue:hall','Garden'
+put 'exams','row2','venue:seatNum','5'
+put 'exams','row2','venue:date','21/01/2011'
+put 'exams','row2','venue:startTime','2:00PM'
+
+count 'exams'
+
+get 'exams','row2'
+
+scan 'exams', {COLUMN => 'rollNum','name'}
+
+put 'exams','row2','student:name','Sumbo D'Elz'
+
+delete 'exams','row1','seatNum'
+deleteall 'exams','row1'
+
+truncate 'exams'
+drop 'exams'
+exists 'exams'

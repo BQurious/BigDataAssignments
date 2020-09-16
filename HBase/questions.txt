@@ -1,0 +1,8 @@
+create table
+	define column families
+populate table
+access data
+	count,get,scan
+edit data
+delete records
+drop table
