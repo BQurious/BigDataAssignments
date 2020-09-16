@@ -28,11 +28,11 @@ count 'exams'
 
 get 'exams','row2'
 
-scan 'exams', {COLUMN => 'rollNum','name'}
+scan 'exams', {COLUMN => 'student:rollNum','student:name'}
 
 put 'exams','row2','student:name','Sumbo D'Elz'
 
-delete 'exams','row1','seatNum'
+delete 'exams','row1','venue:seatNum'
 deleteall 'exams','row1'
 
 truncate 'exams'
